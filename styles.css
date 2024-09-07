@@ -211,7 +211,7 @@ hr {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:624px) {
     .cabecalho {
         display: flex;
         margin: 0;
