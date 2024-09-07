@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("styles/reset.css");
+
+:root {
+    --fonte-principal: "Roboto", sans-serif;
+    --fonte-secundaria: "Nerko One", cursive;
+    --fundo: #161616;
+    --cor-principal: #543310;
+    --cor-adicional: #e8e683;
+    --cor-branco: #fff;
+}
+
+body {
+    width: 100%;
+    background-color: var(--fundo);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.cabecalho__foto__logo {
+    width: 100px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 5em;
+    align-items: center;
+}
+
+.cabecalho__input button {
+    padding: 1rem;
+    border: none;
+    background-color: var(--cor-adicional);
+    border-radius: 15px;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cabecalho__input input {
+    border: none;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.cabecalho__input button:hover {
+    background-color: red;
+    color: var(--cor-branco)
+}
+
+.imagem__fundo {
+    width: 100%;
+
+}
+
+.texto__principal {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: -15px;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    text-shadow: 2px 2px 5px #ffea00;
+}
+
+.cabecalho__titulo {
+    width: 5rem;
+    margin-left: 3rem;
+}
+
+.conteudo__principal {
+    position: relative;
+    margin: 10px 250px 100px 250px;
+    background-color: #00000085;
+    border-radius: 15px;
+}
+
+.titulo__principal {
+    margin-left: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--cor-branco);
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px red;
+}
+
+.cardapio__batata {
+    color: var(--cor-branco);
+    margin-left: 1rem;
+    text-shadow: 2px 2px 5px #b4ff04;
+}
+
+.principal__nomeLanche {
+    margin-left: 1rem;
+    font-size: 25px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-branco);
+    font-weight: 600;
+}
+
+.cardapio__juncao {
+    display: flex;
+    align-items: center;
+}
+
+.principal__descricao {
+    color: var(--cor-branco);
+    font-family: var(--fonte-principal);
+    margin: 1rem;
+}
+
+.principal__valor {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 25px;
+    color: var(--cor-branco);
+}
+
+
+.informaçoes__contato a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    margin: 30px;
+}
+
+.rodape_conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape_informacoes {
+    text-transform: uppercase;
+    color: rgba(240, 248, 255, 0.781);
+    margin-left: 30px;
+    padding: 1rem;
+}
+
+.informacoes__mapa {
+    margin-top: 10px;
+    width: 100%;
+    height: 230px;
+}
+
+.informaçoes__horario {
+    display: flex;
+    color: var(--cor-branco);
+    align-items: center;
+    margin: 30px;
+}
+
+.horarios_detalhado,
+.horario__dias {
+    margin-left: 25px;
+    padding: 5px;
+}
+
+hr {
+    margin: 0;
+}
+
+.localizacao {
+    display: none;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+    .cabecalho {
+        display: flex;
+        margin: 0;
+    }
+
+    .cabecalho__titulo {
+        margin-left: 2rem;
+    }
+
+    .cabecalho__input {
+        margin-right: 2rem;
+    }
+
+    .texto__principal {
+        top: 30%;
+        left: 60%;
+        font-size: 80px;
+    }
+
+    .conteudo__principal {
+        margin: 10px 150px 100px 150px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .cabecalho {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .cabecalho__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho__input input {
+        border: none;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .cabecalho__input button {
+        padding: 10px;
+        margin-top: 8px;
+
+    }
+
+    .cabecalho__titulo {
+        margin-left: 0.3rem;
+    }
+
+    .cabecalho__foto__logo {
+        margin: 3px 0 2px 5px;
+    }
+
+    .conteudo__principal {
+        margin: 0
+    }
+
+    .texto__principal {
+        top: 17%;
+        left: 55%;
+        font-size: 40px;
+    }
+
+    .principal__valor {
+        padding: 10px;
+    }
+
+    .rodape_conteudo {
+        flex-direction: column;
+    }
+
+    .informacoes__mapa {
+        display: none;
+    }
+
+    .localizacao {
+        display: block;
+        text-align: center;
+        color: var(--cor-branco);
+        margin-bottom: 50px;
+    }
+
+    .informaçoes__contato a {
+        margin: 8px;
+    }
+
+    .informaçoes__horario {
+        margin: 0 0 0 30px;
+    }
+}
