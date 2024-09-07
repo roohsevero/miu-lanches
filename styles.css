@@ -188,6 +188,10 @@ hr {
         margin: 0;
     }
 
+    .cabecalho__foto__logo {
+        margin-left: 30px;
+    }
+
     .cabecalho__titulo {
         margin-left: 2rem;
     }
@@ -197,7 +201,7 @@ hr {
     }
 
     .texto__principal {
-        top: 30%;
+        top: 20%;
         left: 60%;
         font-size: 80px;
     }
@@ -246,7 +250,7 @@ hr {
 
     .texto__principal {
         top: 17%;
-        left: 55%;
+        left: 65%;
         font-size: 40px;
     }
 
